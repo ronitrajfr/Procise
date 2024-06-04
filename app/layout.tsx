@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const mainog = "/public/og.jpg"
+const mainog = "https://procise.zerops.xyz/og.jpg"
 
 export const metadata: Metadata = {
   title: "Procise",
