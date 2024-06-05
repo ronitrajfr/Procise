@@ -40,7 +40,7 @@ app.get("/", async (c) => {
   const textComments = comments.map((comment: any) =>
     comment.replace(/<div class="commtext c00">|<\/div>/gs, "")
   );
-  const topComments = textComments.slice(0, 5);
+  const topComments = textComments.slice(0, Math.min(textComments.length, 5));
 
   // console.log(topComments);
 

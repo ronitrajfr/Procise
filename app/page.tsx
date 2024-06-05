@@ -13,7 +13,11 @@ export default function Home() {
     if (!url) return;
     setIsLoading(true);
     const data = axios
-      .get(`${backendUrl}/?url=${encodeURIComponent(url)}`)
+      .get(
+        `https://cloudflare-backend.ronitrajofficial7.workers.dev/?url=${encodeURIComponent(
+          url
+        )}`
+      )
       .then((res) => {
         setResponse(res.data.message.response);
         setIsLoading(false);
