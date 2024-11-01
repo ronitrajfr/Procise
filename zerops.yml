@@ -6,6 +6,15 @@ zerops:
     build:
       # select what technology should the
       # build container be based on, can
+
+
+
+
+
+
+
+
+      
       # be different from service technology
       # see docs for full list
       base: nodejs@20
